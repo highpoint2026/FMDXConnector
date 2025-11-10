@@ -2,18 +2,14 @@
 
 A WebSocket connector for TEF Logger communication with FMDX Webserver (Compatible from Android 8)
 
-<img width="786" height="779" alt="image" src="https://github.com/user-attachments/assets/403e9a3e-ee25-4890-809a-b8779f48700b" />
+![Bild1](https://github.com/user-attachments/assets/506639cb-062a-43f0-9243-d4b7259e8b74)
 
 ## Version 1.0
 
-- Integrated display and direct download of beta versions (Activate in the menu!)
-- Display of changes in the update dialog
-- URDS Map now uses the same map set as the TX Map and is therefore capable of offline use
-- CSV files now contain extended TX data
-- The Copy Button under URDS Options now has an export function and also allows sharing of URDS files
-- A new import button under URDS Options now allows you to import CSV files
-- You can now also send CSV files directly into the app using the send/share command
-- Info button with TX location selection fixed
+- Added address input with port specification for FMDX web servers
+- Multiple servers are possible
+- Server-specific key for communication with the Scanner Plugin (version 3.9 and later) can be entered
+- Integrated log protocol
 
 ## Installation notes:
 
@@ -36,6 +32,12 @@ A WebSocket connector for TEF Logger communication with FMDX Webserver (Compatib
 - Samsung Galaxy A13 with Android 14 / OneUI 6.1
 - Samsung Galaxy Tab A9+ with Android 15 / OneUI 7.0
 - Samsung Galaxy S24 Ultra with Android 16 / OneUI 8.0
+
+## Important notes: 
+
+- Address entry with port specification can be done using IP address or domain name, e.g.: highpoint2000.selfhost.de:9080
+- The communication key for the scanner plugin is located in the scanner.json file on the web server or is displayed in the console upon startup. Without this key, the auto-scan cannot be started or stopped.
+- The server connection is activated via the Connect button. A green status indicates a successful connection. The server information will now be forwarded to the TEF Logger app.
 
 ## Contact
 
